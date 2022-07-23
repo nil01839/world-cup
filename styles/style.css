@@ -1,0 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+/* Common Style  */
+body {
+    font-family: 'Poppins', sans-serif;
+}
