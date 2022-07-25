@@ -13,38 +13,25 @@ body {
 
 .top-banner-inner {
     background-color: #161616;
-    /* display: flex;
-    justify-content: space-between; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* margin: 50px 100px; */
     border-radius: 10px;
     align-items: end;
 
 }
 
 .contents {
-    /* width: 50%; */
-    /* padding: 110px 0 110px 70px; */
     margin: 0 50px;
     padding: 100px 0;
 
 }
 
 .thumbnail {
-    /* width: 50%; */
     line-height: 0px;
-    /* margin-right: 80px; */
-    /* padding-right: 80px; */
-
-
-
 }
 
 .thumbnail img {
-    /* float: right; */
-    /* position: absolute; */
-    width: 80%;
+    width: 90%;
     height: auto;
     max-width: 100%;
     margin-top: 100px;
@@ -100,20 +87,13 @@ a {
     border-radius: 5px;
     padding: 20px 20px 10px 20px;
     margin-right: 20px;
-
-
-
 }
 
 .aside-inner {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    /* padding: 20px; */
 }
 
-/* .aside-inner button {
-    margin-bottom: 20px;
-} */
 
 .aside-inner a {
     color: #161616;
@@ -174,10 +154,10 @@ a {
 /*------------------------------
  FOOTER
  -------------------------------- */
+
 footer {
     background-color: black;
     padding: 60px 0;
-
 }
 
 footer h3 {
@@ -188,22 +168,18 @@ footer h3 {
 
 footer hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-
-
+    width: 90%;
 }
 
 .footer-links {
     text-align: center;
     padding: 30px;
-
 }
 
 .footer-links a {
     color: #B9B9B9;
     padding: 20px;
     font-size: 16px;
-
 }
 
 .footer-media {
@@ -216,11 +192,52 @@ footer hr {
 .fa-brands {
     margin: 0 20px;
     font-size: 40px;
-    /* background-color: white; */
 }
 
-/* MEDIA QUERY */
-/* Tablet Device */
+/* ------------------------------------------------------------------------------
+Upcomming Match Page
+--------------------------------------------------------------------------------*/
+
+.matches-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 16px 16px;
+    margin-bottom: 100px;
+}
+
+.matches {
+    border: 2px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.matches h2 {
+    color: #161616;
+}
+
+.matches h3 {
+    text-align: center;
+}
+
+.matches h4,
+.matches p {
+    color: #161616;
+    text-align: center;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+/* ----------------------------------------------
+MEDIA QUERY 
+-----------------------------------------------*/
+
+
+/* ----------------------
+Tablet Device
+------------------------------------------- */
 @media only screen and (min-width: 669px) and (max-width: 992px) {
 
     .top-banner {
@@ -228,7 +245,6 @@ footer hr {
     }
 
     .top-banner-inner {
-        /* grid-template-columns: 40% 60%; */
         padding: 0;
         margin: 0;
 
@@ -239,10 +255,6 @@ footer hr {
         margin: 0 0 0 30px;
     }
 
-
-    /* .contents {
-        padding: 100px 0 20px 0;
-    } */
 
     h2 {
         font-size: 40px;
@@ -297,6 +309,10 @@ footer hr {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .matches-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .blog:last-child {
         display: none;
     }
@@ -313,7 +329,9 @@ footer hr {
     }
 }
 
-/* Mobile Device */
+/* ------------------------
+Mobile Device 
+-------------------------*/
 @media only screen and (max-width: 668px) {
     .top-banner {
         padding: 20px 40px;
@@ -349,9 +367,6 @@ footer hr {
         text-align: center;
     }
 
-    /* .thumbnail {
-        padding: 20px 20px 0 40px;
-    } */
 
     .thumbnail img {
         margin: 0;
@@ -368,24 +383,24 @@ footer hr {
         background-color: white;
         padding: 0;
         margin: 0 auto;
-
-
     }
 
     .aside-inner {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
-
     }
 
     .aside-inner a {
         border: 2px solid #E8E8E8;
         margin: 0 0 10px 0;
         padding: 5px 0;
-
     }
 
     .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .matches-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -393,9 +408,4 @@ footer hr {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
 }
-
-/* ------------------------------------------------------------------------------
-Upcomming Match Page
---------------------------------------------------------------------------------*/
